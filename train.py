@@ -44,7 +44,7 @@ def train(
 
     register_env(NAME, lambda config: env_creator(**config))
     ModelCatalog.register_custom_model("pa_model", TorchParametricActionsModel)
-    env = env_creator(validation=False)
+    env = env_creator()
     act_dim = env.action_dim
     obs_dim = env.level2_observation_space['advbot'].shape
     activated_dim = env.level2_observation_space['activated'].shape if model_type == "CONV" else None
