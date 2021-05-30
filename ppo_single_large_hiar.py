@@ -15,7 +15,7 @@ torch.manual_seed(SEED)
 config = {
     "NAME":'advbot-v6',
     "run_name":None, 
-    "seed":77, 
+    "seed":SEED, 
     "train_probs":-1,
     "graph_algorithm":"node2vec", 
     "WALK_P":1, 
