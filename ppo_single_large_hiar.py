@@ -6,6 +6,7 @@ from utils import load_graph
 import random
 import sys
 import torch
+import numpy as np
 
 np.random.seed(SEED)
 torch.manual_seed(SEED)
