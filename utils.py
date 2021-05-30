@@ -1,4 +1,5 @@
 import glob
+import pickle
 
 def load_graph(dataset):
     print("loading ", dataset)
