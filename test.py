@@ -1,6 +1,7 @@
 import os
 import ray
 import time
+import numpy as np
 
 from gym_bot.envs import AdvBotEnvSingleDetectLargeHiar
 from models import TorchParametricActionsModel
