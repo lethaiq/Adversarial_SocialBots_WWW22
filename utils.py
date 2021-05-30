@@ -34,4 +34,4 @@ def load_graph(dataset):
                 pass
     
     print("Loaded ", len(validation_graphs), " real graphs")
-
+    return validation_graphs
