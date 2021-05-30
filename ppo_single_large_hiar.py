@@ -8,6 +8,7 @@ import sys
 import torch
 import numpy as np
 
+SEED = 77
 np.random.seed(SEED)
 torch.manual_seed(SEED)
 
