@@ -36,7 +36,8 @@ def test(
     checkpoint_freq=5,
     custom_max_step=120,
     detection_interval=20,
-    greedy=False):
+    greedy=False,
+    wandb_key=None):
 
     ray.init()
     def env_creator(graphs=[]):
