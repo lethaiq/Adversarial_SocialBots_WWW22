@@ -2,7 +2,7 @@ import glob
 import pickle
 
 def load_graph(dataset):
-    print("loading ", dataset)
+    validation_graphs = {}
     if dataset == "original":
         files = glob.glob('./database/_hoaxy*.pkl')
         for file in files:
