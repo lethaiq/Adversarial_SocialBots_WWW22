@@ -132,7 +132,7 @@ def test(
     for name in validation_graphs:
         print("\nGRAPH: {}".format(name))
         graph = validation_graphs[name]
-        env = env_creator(validation_graphs=[graph])
+        env = env_creator(graphs=[graph])
         count = {}
         done = False
         obs = env.reset()
