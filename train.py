@@ -14,7 +14,7 @@ def train(
     NAME='advbot-v6',
     run_name=None, 
     seed=77, 
-    train_probs=-1,
+    probs=-1,
     graph_algorithm="node2vec", 
     WALK_P=1, 
     WALK_Q=50, 
@@ -40,7 +40,7 @@ def train(
                                             walk_q=WALK_Q,
                                             model_type=model_type,
                                             node_embed_dim=node_embed_dim,
-                                            probs=train_probs,
+                                            probs=probs,
                                             graph_feature=graph_feature,
                                             validation_graphs=validation_graphs,
                                             reward_shaping=reward_shaping)

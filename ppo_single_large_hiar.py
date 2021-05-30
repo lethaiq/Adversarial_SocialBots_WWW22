@@ -16,7 +16,7 @@ config = {
     "NAME":'advbot-v6',
     "run_name":None, 
     "seed":SEED, 
-    "train_probs":-1,
+    "probs":0.8, #set -1 to random
     "graph_algorithm":"node2vec", 
     "WALK_P":1, 
     "WALK_Q":50, 
@@ -35,6 +35,12 @@ config = {
     "wandb_key":"5d4247fa5b879af8aeb0874889a94ca78d4be18d"
 }
 
+config_test = {
+    "custom_max_step": 120,
+    "detection_interval":20,
+    "greedy": False,
+}
+
 if __name__ == '__main__':
     if sys.argv[1] == "train":
         train(**config)
@@ -46,4 +52,4 @@ if __name__ == '__main__':
         config["validation_graphs"] = test_graphs
         config["seed"] = 90
 
-        test(model_path, **config)
+        test(model_path, **config, **config_test)

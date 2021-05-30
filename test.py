@@ -16,7 +16,7 @@ def test(
     NAME='advbot-v6',
     run_name=None, 
     seed=77, 
-    train_probs=-1,
+    probs=-1,
     graph_algorithm="node2vec", 
     WALK_P=1, 
     WALK_Q=50, 
@@ -32,7 +32,10 @@ def test(
     entropy_coeff=0.01,
     training_iteration=10000,
     checkpoint_freq=5,
-    wandb_key="5d4247fa5b879af8aeb0874889a94ca78d4be18d"):
+    wandb_key="5d4247fa5b879af8aeb0874889a94ca78d4be18d",
+    custom_max_step=120,
+    detection_interval=20,
+    greedy=False):
 
     ray.init()
     def env_creator(_):
@@ -44,7 +47,7 @@ def test(
                                         walk_q=WALK_Q,
                                         model_type=model_type,
                                         node_embed_dim=node_embed_dim,
-                                        probs=test_probs,
+                                        probs=probs,
                                         mode=graph_feature,
                                         custom_max_step=custom_max_step,
                                         interval=detection_interval)
