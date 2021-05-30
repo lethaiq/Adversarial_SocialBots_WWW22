@@ -23,7 +23,7 @@ from sklearn.preprocessing import OneHotEncoder
 from torch.nn.utils.rnn import pad_sequence
 from keras.utils.np_utils import to_categorical   
 from ge.gcn_test import *
-from graph_utils import *
+from ge.graph_utils import *
 import scipy.stats as ss
 
 warnings.filterwarnings("ignore", category=DeprecationWarning)
