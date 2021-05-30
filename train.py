@@ -67,13 +67,6 @@ def train(
             "vf_share_layers": True,
         }}
 
-    level1_model_config = {
-        "model": {
-            "use_lstm": True,
-            "max_seq_len": 10,
-            "lstm_cell_size": 16,
-        },
-    }
     level1_model_config = {}
 
     policy_graphs = {}

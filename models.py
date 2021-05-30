@@ -66,4 +66,6 @@ class TorchParametricActionsModel(DQNTorchModel):
         return action_logits + inf_mask, state
 
     def value_function(self):
-        return self.action_embed_model.value_function() + self.activated_embed_model.value_function() + self.history_embed_model.value_function()
+        return self.action_embed_model.value_function() + \
+        self.activated_embed_model.value_function() + \
+        self.history_embed_model.value_function()
