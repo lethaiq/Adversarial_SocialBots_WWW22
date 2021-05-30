@@ -55,7 +55,7 @@ def test(
 
     register_env(NAME, env_creator)
     ModelCatalog.register_custom_model("pa_model", TorchParametricActionsModel)
-    env = env_creator()
+    env = env_creator(None)
 
     act_dim = env.action_dim
     obs_dim = env.level2_observation_space['advbot'].shape
