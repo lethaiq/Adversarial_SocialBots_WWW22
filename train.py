@@ -30,7 +30,7 @@ def train(
     entropy_coeff=0.01,
     training_iteration=10000,
     checkpoint_freq=5,
-    wandb_key="5d4247fa5b879af8aeb0874889a94ca78d4be18d"):
+    wandb_key=None):
 
     def env_creator(_):
         env = AdvBotEnvSingleDetectLargeHiar(seed=seed, 
@@ -111,7 +111,7 @@ def train(
             project="ACORN-{}".format(graph_algorithm),
             group="GraphSize-{}".format(act_dim-1),
             api_key=wandb_key,
-            log_config=True)]
+            log_config=True)] if wandb_key else []
     }
 
     ray.init()

@@ -34,7 +34,6 @@ def test(
     entropy_coeff=0.01,
     training_iteration=10000,
     checkpoint_freq=5,
-    wandb_key="5d4247fa5b879af8aeb0874889a94ca78d4be18d",
     custom_max_step=120,
     detection_interval=20,
     greedy=False):
