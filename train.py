@@ -97,7 +97,7 @@ def train(
 
         "lr": lr,
         "entropy_coeff": entropy_coeff,
-        "seed": SEED,
+        "seed": seed,
         'framework': 'torch',
         "env": NAME
     }
