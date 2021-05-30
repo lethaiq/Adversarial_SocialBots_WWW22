@@ -1,5 +1,4 @@
 import gym
-
 import os
 import random
 import sys
@@ -7,7 +6,6 @@ import time
 
 import ray
 import glob
-from gym.spaces import Box
 from tqdm import tqdm
 from ge.graph_utils import *
 

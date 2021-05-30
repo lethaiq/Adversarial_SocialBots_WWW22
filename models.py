@@ -3,7 +3,6 @@ import torch
 
 from gym.spaces import Box
 
-
 from ray.rllib.agents.dqn.dqn_torch_model import DQNTorchModel
 from ray.rllib.models.torch.fcnet import FullyConnectedNetwork as TorchFC
 from ray.rllib.models.torch.misc import AppendBiasLayer

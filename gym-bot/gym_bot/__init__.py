@@ -1,46 +1,5 @@
 from gym.envs.registration import register
-
-register(
-    id='advbot-v0',
-    entry_point='gym_bot.envs:AdvBotEnv',
-)
-register(
-    id='advbot-v1',
-    entry_point='gym_bot.envs:AdvBotEnvSpam',
-)
-register(
-	id="advbot-v2",
-	entry_point='gym_bot.envs:AdvBotEnvFull'
-)
-register(
-	id="advbot-v3",
-	entry_point='gym_bot.envs:AdvBotEnvSingle'
-)
-register(
-	id="advbot-v4",
-	entry_point='gym_bot.envs:AdvBotEnvSingleDetect'
-)
-register(
-	id="advbot-v5",
-	entry_point='gym_bot.envs:AdvBotEnvSingleDetectLarge'
-)
 register(
 	id="advbot-v6",
 	entry_point='gym_bot.envs:AdvBotEnvSingleDetectLargeHiar'
-)
-register(
-	id="advbot-v7",
-	entry_point='gym_bot.envs:AdvBotEnvSingleDetectLargeNonHiar'
-)
-register(
-	id="advbotStats-v0",
-	entry_point='gym_bot.envs:AdvBotEnvStats'
-)
-register(
-	id="advbotStats-v1",
-	entry_point='gym_bot.envs:AdvBotEnvStatsTI'
-)
-register(
-	id="advbotmulti-v0",
-	entry_point='gym_bot.envs:AdvBotEnvMultiDetect'
 )

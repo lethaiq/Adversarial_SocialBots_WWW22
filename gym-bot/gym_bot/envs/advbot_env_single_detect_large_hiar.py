@@ -123,7 +123,7 @@ class AdvBotEnvSingleDetectLargeHiar(MultiAgentEnv): #advbot-v6
             self.REWARD_SHAPING = reward_shaping
 
 
-        self.MODEL_PATH = '{}/Documents/gym-advbots/traditional/{}Classifier_TRAM_lengthNone.joblib'.format(os.path.expanduser("~"), detector_type)
+        self.MODEL_PATH = '{}/Documents/ACORN/detector/{}Classifier_TRAM_lengthNone.joblib'.format(os.path.expanduser("~"), detector_type)
 
         self.level1_independent = level1_independent
         self.graph_algorithm = graph_algorithm
