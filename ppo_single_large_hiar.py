@@ -54,5 +54,6 @@ if __name__ == '__main__':
         
         config["validation_graphs"] = test_graphs
         config["seed"] = test_seed
+        
 
         test(model_path, **config, **config_test)
