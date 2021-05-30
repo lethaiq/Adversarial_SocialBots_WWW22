@@ -28,7 +28,7 @@ def train(
     checkpoint_freq=5,
     wandb_key="5d4247fa5b879af8aeb0874889a94ca78d4be18d"):
 
-    def env_creator():
+    def env_creator(_):
         env = AdvBotEnvSingleDetectLargeHiar(seed=seed, 
                                             validation=False,
                                             graph_algorithm=graph_algorithm.lower(),
