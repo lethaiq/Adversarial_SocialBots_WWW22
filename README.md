@@ -7,10 +7,6 @@ Install the ``gym_bot`` environment:
 cd gym_bot
 python -m pip install -e .
 ```
-Example of Statistics on Synthetic Graphs. 
-![Statistics on Synthetic Graphs](https://raw.githubusercontent.com/lethaiq/ACORN/main/resources/synthetic.png?token=ADJNWYT7SR4MDZULGAGCUHDAXUWJQ)
-Example Statistics on Real Graphs. 
-![Statistics on Real Graphs](https://raw.githubusercontent.com/lethaiq/ACORN/main/resources/real.png?token=ADJNWYQLGJQ7LSSBQKELLRTAXUWIW)
 
 ## Configurations
 Check the ``ppo_single_large_hiar.py``.
@@ -47,6 +43,11 @@ config_test = {
 
 ## Train
 RUN: ``python ppo_single_large_hiar.py train``
+Example of Statistics on Synthetic Graphs. 
+![Statistics on Synthetic Graphs](https://raw.githubusercontent.com/lethaiq/ACORN/main/resources/synthetic.png?token=ADJNWYT7SR4MDZULGAGCUHDAXUWJQ)
+Example Statistics on Real Graphs. 
+![Statistics on Real Graphs](https://raw.githubusercontent.com/lethaiq/ACORN/main/resources/real.png?token=ADJNWYQLGJQ7LSSBQKELLRTAXUWIW)
+
 
 ## Test
 The checkpoint ``./checkpoint_best/checkpoint-150`` is the best checkpoint, result of which is resulted in the paper.  
