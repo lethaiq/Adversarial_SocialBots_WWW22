@@ -46,7 +46,7 @@ def train(
                                             reward_shaping=reward_shaping)
         return env
 
-    register_env(NAME, lambda config: env_creator(**config))
+    register_env(NAME, lambda config: env_creator(None, **config))
     ModelCatalog.register_custom_model("pa_model", TorchParametricActionsModel)
     env = env_creator(None)
     act_dim = env.action_dim
