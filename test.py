@@ -48,7 +48,7 @@ def test(
                                         model_type=model_type,
                                         node_embed_dim=node_embed_dim,
                                         probs=probs,
-                                        mode=graph_feature,
+                                        graph_feature=graph_feature,
                                         custom_max_step=custom_max_step,
                                         interval=detection_interval)
         return env
