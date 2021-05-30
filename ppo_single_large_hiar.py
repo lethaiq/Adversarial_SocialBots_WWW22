@@ -47,8 +47,10 @@ if __name__ == '__main__':
 
     else:
         model_path = sys.argv[2]
-        assert model_path != ""
         test_graphs = load_graph("test")
+        assert model_path != ""
+        assert len(test_graphs)
+        
         config["validation_graphs"] = test_graphs
         config["seed"] = 90
 
