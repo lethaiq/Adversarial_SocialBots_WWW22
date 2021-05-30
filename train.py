@@ -1,4 +1,5 @@
 import os
+import ray
 
 from gym_bot.envs import AdvBotEnvSingleDetectLargeHiar
 from models import TorchParametricActionsModel
