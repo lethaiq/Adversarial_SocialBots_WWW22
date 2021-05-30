@@ -12,35 +12,6 @@ Example of Statistics on Synthetic Graphs.
 Example Statistics on Real Graphs. 
 ![Statistics on Real Graphs](https://raw.githubusercontent.com/lethaiq/ACORN/main/resources/real.png?token=ADJNWYQLGJQ7LSSBQKELLRTAXUWIW)
 
-## Train
-RUN: ``python ppo_single_large_hiar.py train``
-
-
-## Test
-The checkpoint ``./checkpoint_best/checkpoint-150`` is the best checkpoint, result of which is resulted in the paper.  
-RUN: ``python ppo_single_large_hiar.py test ./checkpoint_best/checkpoint-150``
-
-Example outputs:
-```
-...
-GRAPH: ./database/_hoaxy36.pkl
-updating INTERVAL to  20
-EVALUATING REAL GRPAH... 1500
-[Parallel(n_jobs=2)]: Using backend LokyBackend with 2 concurrent workers.
-[Parallel(n_jobs=2)]: Done   2 out of   2 | elapsed:    0.0s remaining:    0.0s
-[Parallel(n_jobs=2)]: Done   2 out of   2 | elapsed:    0.0s finished
-EVALUATING REAL GRPAH... 1500
-[Parallel(n_jobs=2)]: Using backend LokyBackend with 2 concurrent workers.
-[Parallel(n_jobs=2)]: Done   2 out of   2 | elapsed:    0.0s remaining:    0.0s
-[Parallel(n_jobs=2)]: Done   2 out of   2 | elapsed:    0.0s finished
-DONE HERE 120 120
-out_degree [1 3 2 1 1] 120
-Action Sequence (First 10, Last 10): MAMMRTMMRA MAMMRMAMMR
-Number of Interaction: 124
-Reward: 1.002000250031254
-...
-```
-
 ## Configurations
 Check the ``ppo_single_large_hiar.py``.
 ```
@@ -72,4 +43,32 @@ config_test = {
     "detection_interval":20, # interval K refered in the paper
     "greedy": False, # whether test the AgentI+H in the paper (heuristic method)
 }
+```
+
+## Train
+RUN: ``python ppo_single_large_hiar.py train``
+
+## Test
+The checkpoint ``./checkpoint_best/checkpoint-150`` is the best checkpoint, result of which is resulted in the paper.  
+RUN: ``python ppo_single_large_hiar.py test ./checkpoint_best/checkpoint-150``
+
+Example outputs:
+```
+...
+GRAPH: ./database/_hoaxy36.pkl
+updating INTERVAL to  20
+EVALUATING REAL GRPAH... 1500
+[Parallel(n_jobs=2)]: Using backend LokyBackend with 2 concurrent workers.
+[Parallel(n_jobs=2)]: Done   2 out of   2 | elapsed:    0.0s remaining:    0.0s
+[Parallel(n_jobs=2)]: Done   2 out of   2 | elapsed:    0.0s finished
+EVALUATING REAL GRPAH... 1500
+[Parallel(n_jobs=2)]: Using backend LokyBackend with 2 concurrent workers.
+[Parallel(n_jobs=2)]: Done   2 out of   2 | elapsed:    0.0s remaining:    0.0s
+[Parallel(n_jobs=2)]: Done   2 out of   2 | elapsed:    0.0s finished
+DONE HERE 120 120
+out_degree [1 3 2 1 1] 120
+Action Sequence (First 10, Last 10): MAMMRTMMRA MAMMRMAMMR
+Number of Interaction: 124
+Reward: 1.002000250031254
+...
 ```
