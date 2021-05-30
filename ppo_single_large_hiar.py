@@ -3,6 +3,8 @@ from train import train
 from test import test
 from models import TorchParametricActionsModel
 
+import torch
+
 SEED = 770
 test_seed = 70
 np.random.seed(SEED)
