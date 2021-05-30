@@ -38,10 +38,10 @@ def test(
     greedy=False):
 
     ray.init()
-    def env_creator(_):
+    def env_creator(graphs=[]):
         env = AdvBotEnvSingleDetectLargeHiar(seed=seed, 
                                         validation=True,
-                                        validation_graphs=validation_graphs,
+                                        validation_graphs=graphs,
                                         graph_algorithm=graph_algorithm.lower(),
                                         walk_p=WALK_P,
                                         walk_q=WALK_Q,
@@ -131,7 +131,7 @@ def test(
     for name in validation_graphs:
         print("\nGRAPH: {}".format(name))
         graph = validation_graphs[name]
-        env = env_creator(validation_graphs=[graph], seed=77777)
+        env = env_creator(validation_graphs=[graph])
         count = {}
         done = False
         obs = env.reset()
