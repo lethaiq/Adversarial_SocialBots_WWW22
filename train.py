@@ -12,7 +12,7 @@ def train(
     run_name=None, 
     seed=77, 
     train_probs=-1,
-    graph_algorithm="gcn", 
+    graph_algorithm="node2vec", 
     WALK_P=1, 
     WALK_Q=50, 
     model_type="CONV",
@@ -22,6 +22,7 @@ def train(
     reward_shaping=None,
     num_workers=5,
     num_gpus=1,
+    graph_feature="gcn",
     lr=0.0003,
     entropy_coeff=0.01,
     training_iteration=10000,
@@ -37,7 +38,7 @@ def train(
                                             model_type=model_type,
                                             node_embed_dim=node_embed_dim,
                                             probs=train_probs,
-                                            mode=mode,
+                                            graph_feature=graph_feature,
                                             validation_graphs=validation_graphs,
                                             reward_shaping=reward_shaping)
         return env

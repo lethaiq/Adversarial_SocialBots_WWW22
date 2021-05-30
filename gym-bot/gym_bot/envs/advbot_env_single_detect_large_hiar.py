@@ -94,7 +94,7 @@ class AdvBotEnvSingleDetectLargeHiar(MultiAgentEnv): #advbot-v6
                 model_type="FCN",
                 node_embed_dim=2,
                 probs=0.25,
-                mode="out_degree",
+                graph_feature="out_degree",
                 custom_max_step=None,
                 validation_graphs=[],
                 reward_shaping=None,
@@ -132,7 +132,7 @@ class AdvBotEnvSingleDetectLargeHiar(MultiAgentEnv): #advbot-v6
         self.node_embed_dim = node_embed_dim
         self.flg_detection = flg_detection
         self.PROB_RETWEET = probs
-        self.MODE = mode
+        self.MODE = graph_feature
 
         self.DEBUG = debug
         self.model_type = model_type
