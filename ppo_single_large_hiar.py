@@ -28,7 +28,7 @@ from ray.tune import run_experiments
 from ray.tune.integration.wandb import WandbLoggerCallback
 from ray.tune.registry import register_env
 from tqdm import tqdm
-from graph_utils import *
+from ge.graph_utils import *
 
 SEED = 770
 test_seed = 70
