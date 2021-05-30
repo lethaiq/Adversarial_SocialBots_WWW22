@@ -1,11 +1,13 @@
+import os
+
 from gym_bot.envs import AdvBotEnvSingleDetectLargeHiar
+from models import TorchParametricActionsModel
+from ray import tune
+from ray.rllib.agents.ppo import PPOTrainer
+from ray.rllib.models import ModelCatalog
 from ray.tune import run_experiments
 from ray.tune.integration.wandb import WandbLoggerCallback
 from ray.tune.registry import register_env
-from ray.rllib.agents.ppo import PPOTrainer
-from ray.rllib.models import ModelCatalog
-from ray import tune
-from models import TorchParametricActionsModel
 
 def train(
     NAME='advbot-v6',
