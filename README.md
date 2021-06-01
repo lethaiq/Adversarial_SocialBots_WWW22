@@ -7,10 +7,15 @@
 cd gym_bot
 python -m pip install -e .
 ```
+- The main ``gym`` environment file is at ``./gym-bot/gym_bot/envs/advbot_env_single_detect_large_hiar.py``.
 
 ## Dataset
 - All the collected 100 news propagation networks are stored in ``./database/_hoaxy#.pkl`` with ``#`` ranges from 0-99. These are ``networkx`` python object for convenient loading with ``networkx`` library.
 - The test script (below) will automatically load the ``train`` and ``test`` portion of the dataset.
+
+## BlackBox Bot Detector
+- We also provide the ``blackbox`` bot detector trained on the configurations specified in the paper at ``./detector/RandomForestClassifier_TRAM_lengthNone.joblib``. This is a scikit-learn ``Random Forest Classifier`` object that can be loaded using ``pickle`` library.
+- Please refer to ``./gym-bot/gym_bot/envs/advbot_env_single_detect_large_hiar.py`` to how to load and use this bot detector.
 
 ## Hyper-Parameters and Model's Settings
 Check the ``ppo_single_large_hiar.py``.
