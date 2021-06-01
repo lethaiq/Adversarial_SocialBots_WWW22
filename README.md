@@ -1,12 +1,16 @@
 # ACORN
 
 ## Specification of dependencies
-- Check ``req.txt`` file for details. Basically, we will need ``torch``, ``ray[rllib]``, ``tensorflow``, and other basic packages. All other libraries and their version are stored in ``req.txt`` file.  
+- Check ``req.txt`` file for details. Basically, we will need ``torch``, ``ray[rllib]``, ``tensorflow``, ``networkx``, and other basic packages. All other libraries and their version are stored in ``req.txt`` file.  
 - Install the ``gym_bot`` environment:  
 ```
 cd gym_bot
 python -m pip install -e .
 ```
+
+## Dataset
+- All the collected 100 news propagation networks are stored in ``./database/_hoaxy#.pkl`` with ``#`` ranges from 0-99. These are ``networkx`` python object for convenient loading with ``networkx`` library.
+- The test script (below) will automatically load the ``train`` and ``test`` portion of the dataset.
 
 ## Hyper-Parameters and Model's Settings
 Check the ``ppo_single_large_hiar.py``.
