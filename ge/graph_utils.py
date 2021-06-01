@@ -14,7 +14,7 @@ import getpass
 import random
 
 
-def randomize_graph(graph_name='copen', k=1000, mode=1):
+def randomize_graph(graph_name='advbot_train', k=1000, mode=1):
     out_file = './database/{}_community_stats.pkl'.format(graph_name)
     if not os.path.exists(out_file):
         path = './database/{}.pkl'.format(graph_name)

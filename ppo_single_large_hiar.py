@@ -44,6 +44,8 @@ config_test = {
 
 if __name__ == '__main__':
     if sys.argv[1] == "train":
+        print("Training with the configurations")
+        print(config)
         train(**config)
 
     else:
@@ -54,6 +56,8 @@ if __name__ == '__main__':
         
         config["validation_graphs"] = test_graphs
         config["seed"] = test_seed
+        print("Testing with the configurations")
+        print(config, config_test)
         
 
         test(model_path, **config, **config_test)
