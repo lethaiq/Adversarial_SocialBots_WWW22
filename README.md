@@ -1,7 +1,11 @@
 # ACORN
 
 ## Specification of dependencies
-- Check ``req.txt`` file for details. Basically, we will need ``torch``, ``ray[rllib]``, ``tensorflow``, ``networkx``, and other basic packages. All other libraries and their version are stored in ``req.txt`` file.  
+- Python version ``3.8``
+- Check ``req.txt`` file for details. Basically, we will need ``torch``, ``ray[rllib]``, ``tensorflow``, ``networkx``, and other basic packages. All other libraries and their version are stored in ``req.txt`` file. Or you can install all of the libraries by running:
+```
+conda create --name <env> --file req.txt
+``` 
 - Install the ``gym_bot`` environment:  
 ```
 cd gym_bot
@@ -54,8 +58,6 @@ config_test = {
 RUN: ``python ppo_single_large_hiar.py train``
 Example of Statistics on Synthetic Graphs. 
 ![Statistics on Synthetic Graphs](https://raw.githubusercontent.com/lethaiq/ACORN/main/resources/synthetic.png?token=ADJNWYT7SR4MDZULGAGCUHDAXUWJQ)
-Example Statistics on Real Graphs. 
-![Statistics on Real Graphs](https://raw.githubusercontent.com/lethaiq/ACORN/main/resources/real.png?token=ADJNWYQLGJQ7LSSBQKELLRTAXUWIW)
 
 
 ## Test from Pre-trained Model
