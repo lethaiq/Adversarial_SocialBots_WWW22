@@ -1,14 +1,14 @@
 # ACORN
 
-## Installation
-Check ``req.txt`` file for details. Basically, we will need ``torch``, ``ray[rllib]``, ``tensorflow``, and other basic packages.  
-Install the ``gym_bot`` environment:  
+## Specification of dependencies
+- Check ``req.txt`` file for details. Basically, we will need ``torch``, ``ray[rllib]``, ``tensorflow``, and other basic packages. All other libraries and their version are stored in ``req.txt`` file.  
+- Install the ``gym_bot`` environment:  
 ```
 cd gym_bot
 python -m pip install -e .
 ```
 
-## Configurations
+## Hyper-Parameters and Model's Settings
 Check the ``ppo_single_large_hiar.py``.
 ```
 config = {
@@ -49,11 +49,11 @@ Example Statistics on Real Graphs.
 ![Statistics on Real Graphs](https://raw.githubusercontent.com/lethaiq/ACORN/main/resources/real.png?token=ADJNWYQLGJQ7LSSBQKELLRTAXUWIW)
 
 
-## Test
-The checkpoint ``./checkpoint_best/checkpoint-150`` is the best checkpoint, result of which is resulted in the paper.  
-RUN: ``python ppo_single_large_hiar.py test ./checkpoint_best/checkpoint-150``
+## Test from Pre-trained Model
+- The checkpoint ``./checkpoint_best/checkpoint-150`` is the best checkpoint, **result of which is resulted in the paper.**  
+- To reproduce the reuslts, run: ``python ppo_single_large_hiar.py test ./checkpoint_best/checkpoint-150`` for ``ACORN`` and ``python ppo_single_large_hiar.py greedy ./checkpoint_best/checkpoint-150`` for ``AgentI+H`` baseline. Please change the configuration in the ``ppo_single_large_hiar.py`` file for testing with specific parameters such as ``p`` (network actionvation probability), ``custom_max_length`` (maximum time horizon T), etc.
 
-Example outputs:
+- Example outputs:
 ```
 ...
 GRAPH: ./database/_hoaxy36.pkl
