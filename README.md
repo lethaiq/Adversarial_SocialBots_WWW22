@@ -1,4 +1,6 @@
 # ACORN
+## Paper
+"**Socialbots on Fire: Modeling Adversarial Behaviors of Socialbots via Multi-Agent Hierarchical Reinforcement Lear**ning.", Web Conference (WWW) 2022. 
 
 ## Specification of dependencies
 - Python version ``3.8``
@@ -83,4 +85,14 @@ Action Sequence (First 10, Last 10): MAMMRTMMRA MAMMRMAMMR
 Number of Interaction: 124
 Reward: 1.002000250031254
 ...
+```
+
+## Citation
+```
+@article{acorn2022,
+    title={Socialbots on Fire: Modeling Adversarial Behaviors of Socialbots via Multi-Agent Hierarchical Reinforcement Learning},
+    author={Thai Le and Long-Thanh Tran and Dongwon Lee},
+    year={2022},
+    journal={Proceedings of the 31st ACM Web Conference 2022 (WWW'20)},
+}
 ```
