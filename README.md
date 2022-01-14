@@ -2,6 +2,8 @@
 ## Paper
 "**Socialbots on Fire: Modeling Adversarial Behaviors of Socialbots via Multi-Agent Hierarchical Reinforcement Lear**ning.", Web Conference (WWW) 2022. [arxiv](https://arxiv.org/abs/2110.10655)
 
+Many of utils codes are credited to https://dl.acm.org/doi/10.5555/3398761.3398831 at https://github.com/kage08/graph_sample_rl
+
 ## Specification of dependencies
 - Python version ``3.8``
 - Check ``req.txt`` file for details. Basically, we will need ``torch``, ``ray[rllib]``, ``tensorflow``, ``networkx``, and other basic packages. All other libraries and their version are stored in ``req.txt`` file. Or you can install all of the libraries by running:
