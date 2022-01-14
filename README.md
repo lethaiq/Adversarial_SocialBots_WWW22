@@ -1,6 +1,6 @@
 # ACORN
 ## Paper
-"**Socialbots on Fire: Modeling Adversarial Behaviors of Socialbots via Multi-Agent Hierarchical Reinforcement Lear**ning.", Web Conference (WWW) 2022. 
+"**Socialbots on Fire: Modeling Adversarial Behaviors of Socialbots via Multi-Agent Hierarchical Reinforcement Lear**ning.", Web Conference (WWW) 2022. [arxiv](https://arxiv.org/abs/2110.10655)
 
 ## Specification of dependencies
 - Python version ``3.8``
