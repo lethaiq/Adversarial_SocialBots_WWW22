@@ -3,6 +3,7 @@
 "**Socialbots on Fire: Modeling Adversarial Behaviors of Socialbots via Multi-Agent Hierarchical Reinforcement Lear**ning.", Web Conference (WWW) 2022. [arxiv](https://arxiv.org/abs/2110.10655)
 
 Many of utils codes are credited to https://dl.acm.org/doi/10.5555/3398761.3398831 at https://github.com/kage08/graph_sample_rl
+Many of the current codes are in very raw forms. Please use with caution.
 
 ## Specification of dependencies
 - Python version ``3.8``
